@@ -226,6 +226,10 @@ subshell.
 
 Disable space expansion to work around this: `unset 'AUTOPAIR_PAIRS[ ]'`
 
+### Cursor obstructs the matching symbol
+
+If you have a block cursor (like this: `█`), it may obstruct the matching symbol. To check it, just type `echo "` and press Enter. If the matching quote was actually inserted, you'll see it.
+
 ## Other resources
 * Works wonderfully with [zsh-syntax-highlight] and
   `ZSH_HIGHLIGHT_HIGHLIGHTERS+=brackets`, but zsh-syntax-highlight must be
